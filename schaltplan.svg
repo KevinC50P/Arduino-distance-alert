@@ -1,0 +1,68 @@
+<svg viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="900" height="560" fill="#ffffff"/>
+
+  <!-- Arduino -->
+  <rect x="50" y="180" width="180" height="220" rx="8" fill="#2f6fb3" stroke="#1c4a7a" stroke-width="2"/>
+  <text x="140" y="170" text-anchor="middle" font-size="18" font-weight="bold">Arduino Uno</text>
+
+  <!-- Arduino Pin labels -->
+  <text x="60" y="210" font-size="14" fill="#ffffff">5V</text>
+  <text x="60" y="235" font-size="14" fill="#ffffff">GND</text>
+  <text x="60" y="260" font-size="14" fill="#ffffff">Pin 2</text>
+  <text x="60" y="285" font-size="14" fill="#ffffff">Pin 3</text>
+  <text x="60" y="310" font-size="14" fill="#ffffff">Pin 4</text>
+  <text x="60" y="335" font-size="14" fill="#ffffff">Pin 9</text>
+  <text x="60" y="360" font-size="14" fill="#ffffff">Pin 11</text>
+  <text x="60" y="385" font-size="14" fill="#ffffff">Pin 12</text>
+
+  <!-- HC-SR04 -->
+  <rect x="380" y="60" width="160" height="90" rx="6" fill="#e0a020" stroke="#8a5e10" stroke-width="2"/>
+  <text x="460" y="45" text-anchor="middle" font-size="16" font-weight="bold">HC-SR04</text>
+  <text x="460" y="90" text-anchor="middle" font-size="13" fill="#ffffff">VCC  TRIG</text>
+  <text x="460" y="115" text-anchor="middle" font-size="13" fill="#ffffff">ECHO  GND</text>
+
+  <!-- LEDs -->
+  <circle cx="650" cy="220" r="20" fill="#ff5555" stroke="#7a1414" stroke-width="2"/>
+  <text x="650" y="200" text-anchor="middle" font-size="13">LED1 (weit)</text>
+
+  <circle cx="650" cy="290" r="20" fill="#ffd23f" stroke="#8a6a10" stroke-width="2"/>
+  <text x="650" y="270" text-anchor="middle" font-size="13">LED2 (mittel)</text>
+
+  <circle cx="650" cy="360" r="20" fill="#4caf50" stroke="#1c5e1f" stroke-width="2"/>
+  <text x="650" y="340" text-anchor="middle" font-size="13">LED3 (nah)</text>
+
+  <!-- Buzzer -->
+  <rect x="740" y="420" width="90" height="50" rx="6" fill="#9c27b0" stroke="#5a1461" stroke-width="2"/>
+  <text x="785" y="500" text-anchor="middle" font-size="13" font-weight="bold">Buzzer</text>
+
+  <!-- Widerstand-Hinweis -->
+  <text x="650" y="440" text-anchor="middle" font-size="12" fill="#555555">jede LED mit 220Ω Vorwiderstand</text>
+
+  <!-- Connections -->
+  <!-- 5V to HC-SR04 VCC -->
+  <line x1="230" y1="205" x2="420" y2="90" stroke="#c0392b" stroke-width="2"/>
+  <!-- GND to HC-SR04 GND -->
+  <line x1="230" y1="230" x2="500" y2="115" stroke="#333333" stroke-width="2"/>
+  <!-- Pin11 to TRIG -->
+  <line x1="230" y1="355" x2="500" y2="90" stroke="#2980b9" stroke-width="2"/>
+  <!-- Pin12 to ECHO -->
+  <line x1="230" y1="380" x2="420" y2="115" stroke="#27ae60" stroke-width="2"/>
+
+  <!-- Pin2 to LED1 -->
+  <line x1="230" y1="255" x2="630" y2="220" stroke="#c0392b" stroke-width="2"/>
+  <!-- Pin3 to LED2 -->
+  <line x1="230" y1="280" x2="630" y2="290" stroke="#c0392b" stroke-width="2"/>
+  <!-- Pin4 to LED3 -->
+  <line x1="230" y1="305" x2="630" y2="360" stroke="#c0392b" stroke-width="2"/>
+  <!-- Pin9 to Buzzer -->
+  <line x1="230" y1="330" x2="740" y2="440" stroke="#c0392b" stroke-width="2"/>
+
+  <!-- LEDs to GND rail -->
+  <line x1="650" y1="240" x2="650" y2="470" stroke="#333333" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="650" y1="310" x2="650" y2="470" stroke="#333333" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="650" y1="380" x2="650" y2="470" stroke="#333333" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="650" y="490" text-anchor="middle" font-size="12" fill="#555555">GND-Schiene</text>
+  <line x1="230" y1="230" x2="650" y2="470" stroke="#333333" stroke-width="1" stroke-dasharray="2,2"/>
+
+  <text x="450" y="540" text-anchor="middle" font-size="12" fill="#777777">Vereinfachtes Schaltbild – nicht maßstabsgetreu</text>
+</svg>
